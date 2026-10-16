@@ -1,0 +1,3 @@
+# Threat model
+
+Protect code, secrets, provenance, Controller policies, leases, model budgets and release authority. Adversaries include prompt injection from repository files, tool-output spoofing, hostile build scripts, untrusted dependency install, worktree escapes, concurrent lease races, fabricated test output and replayed evidence. Controller trust roots cannot be writable by builders. Reviewers must be independent. Project-configured checks are potentially hostile executables, so run only within constrained permitted environments. Sensitive outputs must be scrubbed. No autonomous merge, deployment, payment or secret retrieval. A reviewer saying NO_MATERIAL_DEFECTS is not evidence.

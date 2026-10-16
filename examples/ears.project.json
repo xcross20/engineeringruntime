@@ -1,0 +1,40 @@
+{
+  "name": "EARS",
+  "repository": "xcross20/EARS",
+  "work_orders": [
+    "ERT-001"
+  ],
+  "verification_commands": [
+    [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    [
+      "npm",
+      "test"
+    ],
+    [
+      "npm",
+      "run",
+      "test:e2e"
+    ],
+    [
+      "npm",
+      "run",
+      "build"
+    ],
+    [
+      "npm",
+      "audit",
+      "--audit-level=critical"
+    ]
+  ],
+  "forbidden_actions": [
+    "merge",
+    "deploy",
+    "payment",
+    "read-unrelated-secrets"
+  ],
+  "max_repairs": 2
+}

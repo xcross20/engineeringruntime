@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project adapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "repository",
+    "work_orders",
+    "verification_commands",
+    "forbidden_actions",
+    "max_repairs"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repository": {
+      "type": "string",
+      "minLength": 1
+    },
+    "work_orders": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_commands": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "max_repairs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    }
+  }
+}
