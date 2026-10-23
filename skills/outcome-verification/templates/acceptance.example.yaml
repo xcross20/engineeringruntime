@@ -1,0 +1,14 @@
+contract_id: UO-001
+contract_version: approved
+target_repo: xcross20/resilence
+requirements:
+  - id: UO-AC-03
+    description: Deterministic execution replaces an unnecessary model call
+    critical: true
+    checks:
+      - test_deterministic_replacement
+  - id: UO-AC-07
+    description: Unsafe or inconclusive strategies cannot activate
+    critical: true
+    checks:
+      - test_blocked_activation
