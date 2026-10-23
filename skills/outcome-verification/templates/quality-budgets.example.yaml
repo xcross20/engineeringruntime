@@ -1,0 +1,11 @@
+execution:
+  fast_timeout_seconds: 120
+  integration_timeout_seconds: 600
+  adversarial_timeout_seconds: 900
+  max_repair_cycles: 2
+  paid_provider_calls_allowed: false
+  production_side_effects_allowed: false
+evidence:
+  require_exit_code: true
+  require_commit_sha: true
+  require_artifact_paths_for_browser_checks: true
