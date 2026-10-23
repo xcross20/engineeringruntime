@@ -1,0 +1,18 @@
+{
+  "schema_version": "1",
+  "source_commit": "REPLACE_WITH_SHA",
+  "contract_id": "UO-001",
+  "environment": "isolated-test",
+  "overall_status": "INCONCLUSIVE",
+  "checks": [
+    {
+      "requirement_id": "UO-AC-07",
+      "status": "INCONCLUSIVE",
+      "command": "pytest -q tests/test_release.py",
+      "exit_code": null,
+      "duration_ms": null,
+      "artifacts": [],
+      "note": "Not executed"
+    }
+  ]
+}
